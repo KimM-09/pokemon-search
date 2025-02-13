@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Joti+One&family=Lilita+One&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="flex-col">
+      <div class="search flex-col">
+        <h2>Search Pokémon by Name or Number</h2>
+      <div>
+        <input id="search-input" required class="search-input" />
+        <button id="search-button" class="search-button">Search</button>
+      </div>
+      </div>
+
+    <main>
+      <div class="info flex-col" id="pokemon-container">
+        <div class="top flex-col" id="top-info">
+        <div class="name-id flex-row">
+        <div>
+          <p id="pokemon-name" class="poke-name"></p>
+        </div>
+        <div class="name-id flex-row">
+          <p id="pokemon-id" class="poke-id"></p>
+        </div>
+        </div>
+        
+        <div class="weight-height flex-row">
+          <div>
+          <p id="weight" class="poke-weight"></p>
+          </div>
+          <div>
+          <p id="height" class="poke-height"></p>
+          </div>
+        </div>
+        <div>
+          <img id="sprite" class="pic">
+        </div>
+        <div class="types" id="types">
+        </div> 
+        </div>
+      </div>
+
+      <div class="stats flex-row">
+        <div>
+          <p class="left"><b>Base</b></p>
+          <p class="left">HP:</p>
+          <p class="left">Attack:</p>
+          <p class="left">Defense</p>
+          <p class="left">Sp. Attack</p>
+          <p class="left">Sp. Defense</p>
+          <p class="left">Speed</p>
+        </div>
+        <div>
+          <p class="right"><b>Stats</b></p>
+          <p class="right" id="hp"></p>
+          <p class="right" id="attack"></p>
+          <p class="right" id="defense"></p>
+          <p class="right" id="special-attack"></p>
+          <p class="right" id="special-defense"></p>
+          <p class="right" id="speed"></p>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

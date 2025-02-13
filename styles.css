@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #5db9ff;
+  font-family: "Joti One", serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.search {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  /* width: 400px; */
+  
+}
+
+.search-input {
+  width: 200px;
+  height: 30px;
+  border-radius: 7px;
+  border: none;
+  margin-right: 20px;
+  margin-top: 10px;
+  background-color: #EDF2F4;
+  color: #2B2D42;
+  text-align: center;
+}
+
+.search-button {
+  width: 75px;
+  height: 30px;
+  border-radius: 25px;
+  border: none;
+  background-color: #D90429;
+  color: #EDF2F4;
+  cursor: pointer;
+}
+
+/* .output {
+  width: 400px;
+  height: 600px;
+  border-radius: 15px;
+  box-shadow: 10px 10px #2B2D42;
+  background-color: #EDF2F4;
+  padding: 10px;
+} */
+
+.info, .stats {
+  width: 500px;
+  height: 400px;
+  color: black;
+  /* background-color: #65a5d580; */
+  background-color: white;
+}
+
+.info {
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+.stats {
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+
+
+.poke-name, .poke-weight, .poke-id, .poke-height {
+  padding-right: 15px;
+  font-size: 20px;
+}
+
+img {
+  width: 200px;  
+}
+
+.types {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.left {
+  width: 150px;
+  height: 35px;
+  /* padding: 10px; */
+  margin: 5px;
+  background-color: #EF233C;
+  color: #EDF2F4;
+  text-align: center;
+  font-size: 24px;
+}
+
+.right {
+  width: 100px;
+  height: 35px;
+  /* padding: 10px; */
+  margin: 5px;
+  background-color: #EF233C;
+  color: #EDF2F4;
+  text-align: center;
+  font-size: 24px;
+}
+
+@media (max-width: 500px) {
+  .info, .stats {
+    width: 300px;
+    height: 350px
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
